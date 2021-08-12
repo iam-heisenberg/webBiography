@@ -1,0 +1,541 @@
+@font-face{
+	font-family: SourceSansPro-Bold;
+	src: url('bahan/SourceSansPro-Bold.ttf');
+}
+
+@font-face{
+	font-family: SourceSansPro-Regular; 
+	src: url('bahan/SourceSansPro-Regular.ttf');
+}
+
+@font-face{
+	font-family: SourceSansPro-Light; 
+	src: url('bahan/SourceSansPro-Light.ttf');
+}
+
+@font-face{
+	font-family: Poppins-Regular;
+	src: url('bahan/Poppins-Regular.ttf');
+}
+
+@font-face{
+	font-family: Poppins-Bold; 
+	src: url('bahan/Poppins-Bold.ttf');
+}
+
+@font-face{
+	font-family: Poppins-BoldItalic;
+	src: url('bahan/Poppins-BoldItalic.ttf');
+}
+
+@font-face{
+	font-family: SourceSansPro-LightItalic; 
+	src: url('bahan/SourceSansPro-LightItalic.ttf');
+}
+
+@font-face{
+	font-family: Poppins-Light; 
+	src: url('bahan/Poppins-Light.ttf');
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	background-color: white;
+}
+
+@media screen and (max-width: 500px){
+	nav.nav_mobile{
+		display: flex;
+		flex-direction: column;
+	}
+
+	button.nav-logo{
+		font-size: 5vw; 
+		margin: 0 0 0 5%;
+		flex-grow: 2;
+	}
+
+	button.nav_item{
+		font-size: 3vw;
+	}
+
+	div.navigation_mobile{
+		width: 100%;
+		margin: 0;
+
+	}
+
+
+	img.gambar{
+		height: 60vh;
+	}
+
+	div.atasnya_filter{
+		height: 60vh;
+	}
+
+	div.containernya{
+		position: relative;	
+		top: 50%;
+		left: 50%;
+		margin: 0;
+		transform: translate(-50%, -50%);
+	}
+
+	p.header_judul{
+		text-align: center;
+		font-size: 5vh;
+	}
+
+	p.header_tulisan{
+		text-align: center;
+		font-size: 1.5vh;
+	}
+
+
+	nav.nav_style{
+		height: 16vh;
+	}
+
+	div.header_gambar{
+		margin-top: 5px;
+	}
+
+	nav.nav_style{
+		display: none;
+	}
+
+	div.logo_mungkin{
+		font-size: 2.5vh;
+	}
+	nav.nav_style{
+		height: 5%;
+		margin: 0;
+	}
+
+	p.tulisan_batasan{
+		font-size: 2.7vh;
+	}
+
+	article.artikel_moto{
+		height: 20vh;
+	}
+
+	p.tulisan_moto{
+		font-size: 2vh;
+	}
+
+	div.isi_moto{
+		width: 75%;
+	}
+
+	div.artworks_container{
+		flex-direction: column;
+	}
+
+	div.batasan_artikel_artwork{
+		margin: 20px 0 20px 0;
+	}
+
+	div.artworks_box{
+		width: 100%; 
+		height: 90vw;
+	}
+
+	div.artworks_box_tengah{
+		width: 100%; 
+		height: 90vw;
+	}
+
+	article.hubungi_saya{
+		height: 40vw;
+	}
+
+	img.icon{
+		width: 18vw;
+	}
+
+	div.isi_hubungi_saya{
+		width: 63vw;
+	}
+
+	aside.container_profil{
+		height: 150vw;
+	}
+	div.enkapsulasi{
+		flex-direction: column;
+	}
+
+	img.foto_profil{
+		width: 60vw;
+		height: 70vw;
+	}
+
+	div.enkapsulasi{
+		height: 110vw;
+		width: 80vw;
+	}
+
+	div.gambar_profil{
+		width: 50vw;
+		height: 80vw;
+		margin-top: 10%;
+	}
+
+	div.deskripsi_profil{
+		position:relative;
+		top: 15%;
+	}
+
+	h1.judul_profil{
+		font-size: 8vw;
+		text-align: center;
+		width: 90%;
+	}
+
+	h2.subJudul_profil{
+		text-align: center;
+		width: 90%;
+		font-size: 4.5vw;
+	}
+
+	p.tulisan_profil{
+		text-align: center;
+		width: 90%;
+		font-size: 2.5vw;
+	}
+
+	
+
+
+}
+
+.nav_mobile{
+		font-family: SourceSansPro-Regular;
+		font-size: 1.5vw;
+		color: black;
+	}
+
+
+.nav_mobile{
+	display: none;
+	
+}
+
+.logo_mungkin{
+	font-family: SourceSansPro-Bold; 
+	font-size: 1.5vw;
+	flex-grow: 2 
+}
+
+.nav-logo{
+	font-family: SourceSansPro-Bold; 
+	font-size: 1.5vw;
+	flex-grow: 2; 
+	background-color :white;
+	border: none;
+	margin-left: 10%;
+}
+
+.nav-logo:hover{
+	background-color: rgba(0,0,0,0.1);
+	border-radius: 10px;
+	transition: 0.3s;
+}
+
+
+.kosong{
+	width: 90%;
+}
+
+.navigation{
+	flex-grow: 1;
+	margin-right: 5%;
+}
+
+.nav_item{
+	text-decoration: none;
+	font-family: SourceSansPro-Regular;
+	font-size: 1.5vw;
+	color: black;
+	float: right;
+	margin-left: 5%;
+	background-color:white;
+	border: none;
+	padding: 0px 15px 0 15px;
+}
+
+.nav_item:hover{
+	background-color: rgba(0,0,0,0.1);
+	border-radius: 10px;
+	transition: 0.3s;
+}
+
+.nav_style{
+	display: flex;
+	margin-top: 20px; 
+	position: sticky; 
+	top: 0; 
+	background-color: white;
+	padding: 10px 0 10px 0; 
+	z-index: 2;
+}
+
+.header_gambar{
+	margin: 20px 5% 0 5%; 
+	height: 100%; 
+	width: 90%; 
+	position: relative;
+}
+
+.gambar{
+	height: 50vh;
+	width: 100%;
+	object-fit: cover;
+	z-index: -1; 
+}
+
+.atasnya_filter{
+	width: 100%; 
+	height: 50vh; 
+	z-index: 1; 
+	background-color: rgba(0,0,0,0.5);
+	top: 0;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+}
+
+.header_judul{
+	font-family: Poppins-Bold; 
+	color: white;
+	/*margin-left: 2vw;
+	margin-bottom: 0px;
+	margin-top: 22vh;*/
+	font-size: 5vw;
+	align-items: center;
+	padding: 0;
+	margin: 0;			
+}
+
+.header_tulisan{
+	font-family: Poppins-Regular; 
+	color: white;
+	/*margin-left: 2vw;*/
+	margin-top: -1.5vw;
+	font-size: 1.5vw;
+	align-items: center;
+}
+
+.containernya{
+	width: 100%; 
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-left: 6%;
+}
+
+.content{
+	margin-left: 5%; 
+	margin-right: 5%;
+	margin-top: 2%; 
+	height: 100%; 
+	width: 90%;
+}
+
+.batasan_artikel{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	margin: 0;
+}
+
+.anggep_aja_box{
+	width: 100px; 
+	height: 10px;
+	background-color: black;
+	margin: 1.2em;
+}
+
+.tulisan_batasan{
+	margin: 0; 
+	font-family: Poppins-BoldItalic;
+	font-size: 2vw;
+	text-align: center;
+}
+
+.tengah_cara_bodoh{
+	height: 100%;
+	flex-grow: 1;
+}
+
+.tengah_isi{
+	display: flex; 
+	flex-grow: 2
+	margin: 0 auto;
+}
+
+.artikel_moto{
+	background-color: #e2d5d5;
+	width: 100%; 
+	height: 20vh;
+}
+
+.isi_moto{
+	width: 75%;  
+	position: relative;
+	height: 100%;
+	top: 50%; 
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.tulisan_moto{
+	font-size: 1.8vw;
+	font-family: SourceSansPro-LightItalic;
+	text-align: justify;
+	position: relative;
+	top: 50%; 
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.artworks{
+	width: 100%; 
+	height: 100%;
+}
+
+.artworks_container{
+	display: flex; 
+	width: 100%;
+	height: 100%;
+}
+
+.artworks_box{
+	flex-grow: 1; 
+	flex-direction: column;
+	height: 30vw;
+	width: 40vw;
+	margin: 10px 20px 10px 0;
+}
+
+.artworks_box_tengah{
+	flex-grow: 1; 
+	flex-direction: column;
+	height: 30vw;
+	width: 40vw;
+	margin: 10px 20px 0 0;
+}
+
+.batasan_artikel_artwork{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	margin: 30px 0 30px 0;
+}
+
+.gambar_artworks{
+	height: 100%; 
+	object-fit: cover;	
+	width: 100%;
+}
+
+.hubungi_saya{
+	width: 100%;  
+	height: 10vw;
+	background-color: #cee6b4;
+}
+
+.isi_hubungi_saya{
+	width: 28vw;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	align-items: center;
+}
+
+.icon{
+	width: 7vw;
+}
+
+.container_profil{
+	width: 100%; 
+	height: 20vw;
+	background-color: #EAE4E4;
+	display: flex;
+	flex-direction: row;
+}
+
+.gambar_profil{
+	width: 15vw;
+	height :100%;
+	margin: 0 auto;
+
+}
+
+.foto_profil{
+	width: 15vw;
+	height: 15vw; 
+	object-fit: cover;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: .5vw .5vw rgba(0,0,0,0.3);
+}
+
+.deskripsi_profil{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-left: 10%;
+}
+
+.footer{
+	width: 90%; 
+	text-align: center;
+	margin: 40px 0 40px 5%;
+	font-family: SourceSansPro-Light;
+}
+
+.enkapsulasi{
+	width: 40%;
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+.judul_profil{
+	margin-bottom: 0; 
+	font-family: SourceSansPro-Bold;
+	font-size: 3vw;
+	margin-top: 4vw;	
+
+}
+
+.subJudul_profil{
+	font-family: SourceSansPro-Light;
+	margin: 0;
+	font-size: 1.6vw;
+}
+
+.tulisan_profil{
+	font-family: Poppins-Light;
+	font-size: 1vw;
+	width: 25vw;
+	margin-bottom: 0;
+}
+
+
+
+
+
+
